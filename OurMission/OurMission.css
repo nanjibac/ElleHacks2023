@@ -168,3 +168,16 @@ head{
   .icon a:hover img {
     transform: scale(1.3);
   }
+  section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff
+  }
+  
+  h2 {
+    margin-top: 80;
+  }
+  
+  p {
+    margin-bottom: 20;
+  }
