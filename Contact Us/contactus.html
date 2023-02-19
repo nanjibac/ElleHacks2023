@@ -6,5 +6,55 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="contactus.css">
 </head>
+<body>
+  <div class="contact-banner">
+    <p>Contact Us</p>
+  </div>
+  
+  
+  <div class="form-container">
+  <form action="submit-form.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="message">Phone Number:</label>
+  <textarea id="message" name="message" required></textarea><br>
+
+  <select id="reason" name="reason" required>
+    <option value="">Please select a reason</option>
+    <option value="Inquiry">Inquiry</option>
+    <option value="Feedback">Feedback</option>
+    <option value="Report a problem">Report a problem</option>
+  </select><br>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea><br>
+  <input type="submit" value="Submit">
+  
+</div>
+  
+  
+
+
+</form>
+<div class="footer">
+  <ul style="font-size:16px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">    Follow Us   </ul>
+  <ul class="social-icons">
+     <a> <img href="https://www.instagram.com/?hl=en" style=" width: 40px; height: 40px; align-items: center;"  src="Instagram_icon.png.webp"> </a>
+    <li><a  href="https://www.instagram.com/?hl=en"> <i class="fab fa-instagram"></i></a></li>
+    <a> <img href="https://www.instagram.com/?hl=en" style=" width: 40px; height: 40px;"  src="174857.png"> </a>
+    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+    <a> <img href="https://www.instagram.com/?hl=en" style=" width: 40px; height: 40px;"  src="281769.png"> </a>
+    <li><a href="mailto:your-email-address"><i class="fas fa-envelope"></i></a></li>
+    <a> <img href="https://www.instagram.com/?hl=en" style=" width: 40px; height: 40px;"  src="124021.png"> </a>
+    <ul>
+  </ul>
+</div>
+
+</body>
+</html>
