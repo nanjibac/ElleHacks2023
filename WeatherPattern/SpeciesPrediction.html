@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../WeatherPattern/species.css">
+</head>
+<body>
+  <!-- <script>
+    const myForm = document.getElementById("myForm");
+    const csvFile = document.getElementById("csvFile");
+
+    myForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const input = csvFile.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function (e) {
+        const text = e.target.result;
+      //  document.write(text);
+      };
+
+      reader.readAsText(input);
+
+      function csvToArray(str, delimiter = ",") {
+        // slice from start of text to the first \n index
+        // use split to create an array from string by delimiter
+        const headers = str.slice(0, str.indexOf("\n")).split(delimiter);
+      
+        // slice from \n index + 1 to the end of the text
+        // use split to create an array of each csv value row
+        const rows = str.slice(str.indexOf("\n") + 1).split("\n");
+      }
+      function csvToArray(str, delimiter = ",") {
+        // slice from start of text to the first \n index
+        // use split to create an array from string by delimiter
+        const headers = str.slice(0, str.indexOf("\n")).split(delimiter);
+      
+        // slice from \n index + 1 to the end of the text
+        // use split to create an array of each csv value row
+        const rows = str.slice(str.indexOf("\n") + 1).split("\n");
+      
+        // Map the rows
+        // split values from each row into an array
+        // use headers.reduce to create an object
+        // object properties derived from headers:values
+        // the object passed as an element of the array
+        const arr = rows.map(function (row) {
+          const values = row.split(delimiter);
+          const el = headers.reduce(function (object, header, index) {
+            object[header] = values[index];
+            return object;
+          }, {});
+          return el;
+        });
+      
+        // return the array
+        return arr;
+      }
+      reader.onload = function (e) {
+        const text = e.target.result;
+        const data = csvToArray(text);
+        document.write(JSON.stringify(data));
+      };
+    });
+
+  </script> -->
+
+  <div class="navbar">
+    <a href="../Ahomepage/Homepage.html">Home</a>
+    <a href="../OurMission/OurMission.html">Our Mission</a>
+
+    <a href="../Partner/Partner.html">
+      <btn>Our Partners</btn><br>
+    </a>
+    <a href="../Country/Countries.html">
+      <btn>All countries and Regions</btn><br>
+    </a>
+    <a href="../WeatherPattern/WeatherPattern.html">
+      <btn>Weather Pattern</btn><br>
+    </a>
+    <a href="../FAQ/FAQ.html">
+      <btn>FAQ</btn><br>
+    </a>
+    <a href="../Contact Us/contactus.html">
+      <btn>Contact Us</btn>
+    </a>
+    <div class="menu">
+      <button class="menubtn">Infographics <i class="fa fa-caret-down"></i></button>
+      <div class="menu-content">
+        <a href="../WeatherPattern/WeatherPattern.html">Weather</a>
+        <a href="../Pest/Pest.html">Native Species</a>
+        <a href="../Pest/Pest.html">Invasive Species</a>
+      </div>
+    </div>
+  </div>
+  <button ><a href="#section1">Ontario</a></button>
+  <button><a href="#section2">Quebec</a></button>
+  <button><a href="#section3">Alberta</a></button>
+  <button><a href="#section3">Emerald AshBorer</a></button>
+  
+  <!-- Your webpage content here -->
+  
+  <h2 style="text-align: center;"id="section1">Ontario</h2>
+  <img style="display: block; margin: 0 auto;"  src="../WeatherPattern/Ontario.png" alt="Description of image">
+  <hr>
+  <h2 style="text-align: center;"id="section2">Quebec</h2>
+  <img style="display: block; margin: 0 auto;" src="../WeatherPattern/quebec.png" alt="Description of image">
+  <hr>
+  <h2 style="text-align: center;"id="section3">Alberta</h2>
+  <img style="display: block; margin: 0 auto;" src="../WeatherPattern/Alberta.png" alt="Description of image">
+  <hr>
+  <h2 id="section3">Emerald AshBorer</h2>
+  <img style="display: block; margin: 0 auto;" src="../WeatherPattern/image (3).png" alt="Description of image">
+  
+  <div class="footer">
+    <div class="followus">
+      <ul class="movable-text">Follow US</ul>
+    </div>
+
+    <ul class="icon">
+       <a> <img href="https://www.instagram.com/?hl=en" style=" width: 40px; height: 40px; align-items: center;"  src="Instagram_icon.png.webp"> </a>
+      <li> <i class="instagram"></i></a></li>
+      <a> <img href="https://www.instagram.com/?hl=en" style=" width: 40px; height: 40px;"  src="174857.png"> </a>
+      <li><i class="facebook"></i></a></li>
+      <a> <img href="https://www.instagram.com/?hl=en" style=" width: 40px; height: 40px;"  src="281769.png"> </a>
+      <li><a href="mailto:your-email-address"><i class="fas fa-envelope"></i></a></li>
+      <a> <img href="https://www.instagram.com/?hl=en" style=" width: 40px; height: 40px;"  src="124021.png"> </a>
+      <ul>
+    </ul>
+  </div>
+
+ 
+</body>
+
+</html>
